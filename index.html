@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://www.bgu.ac.il/~omerlev/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <title>Aharon Bar Hillel</title>
+ 
+ 
+ <script language="javascript"> 
+ function HideContent(d) {
+document.getElementById(d).style.display = "none";
+var nav=d.concat("Nav");
+document.getElementById(nav).className = "noncurrent-page";
+}
+
+function ShowContent(d) {
+document.getElementById(d).style.display = "block";
+var nav=d.concat("Nav");
+document.getElementById(nav).className = "current-page";
+
+}
+
+ function Show(d) {
+// Between the quotation marks, list the id values of each div.
+var IDvaluesOfEachDiv = "aboutSection papersSection contactSection miscSection";
+
+//-------------------------------------------------------------
+IDvaluesOfEachDiv = IDvaluesOfEachDiv.replace(/[,\s"']/g," ");
+IDvaluesOfEachDiv = IDvaluesOfEachDiv.replace(/^\s*/,"");
+IDvaluesOfEachDiv = IDvaluesOfEachDiv.replace(/\s*$/,"");
+IDvaluesOfEachDiv = IDvaluesOfEachDiv.replace(/  +/g," ");
+var IDlist = IDvaluesOfEachDiv.split(" ");
+
+for(var i=0; i<IDlist.length; i++) {HideContent(IDlist[i]); }
+ShowContent(d);
+}
+
+function checkParam() {
+  var queryString = window.location.search.slice(1);
+
+  // if query string exists
+  if (queryString) {
+
+    // stuff after # is not part of query string, so get rid of it
+    queryString = queryString.split('#')[0];
+    
+    if (queryString.includes("about")) {
+    	Show('aboutSection');
+    	return;
+    	}
+    	
+    if (queryString.includes("papers")) {
+    	Show('papersSection');
+    	return;
+    	}
+    if (queryString.includes("contact")) {
+    	Show('contactSection');
+    	return;
+    	}
+    if (queryString.includes("misc")) {
+    	Show('miscSection');
+    	return;
+    	}
+    }
+    
+
+}
+</script>
+
+ 
+ <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+ .papername {
+ color: forestgreen;
+ font-weight: 900;
+ }
+ p {
+ color: rgb(90, 90, 90);
+ font-family: 'Lato', 'HoeflerText-Regular', 'Hoefler Text', 'Garamond', 'Georgia', 'Times New Roman', serif;
+ font-size: 16px;
+ font-stretch: normal;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: 400;
+ letter-spacing: 0;
+ line-height: 22px;
+ opacity: 1.00;
+ padding-bottom: 16px;
+ padding-top: 0px;
+ text-align: left;
+ text-decoration: none;
+ text-indent: 0px;
+ text-transform: none;
+}
+li {
+ color: rgb(95, 95, 95);
+ font-family: 'Lato', 'HoeflerText-Regular', 'Hoefler Text', 'Garamond', 'Georgia', 'Times New Roman', serif;
+ font-size: 16px;
+ font-stretch: normal;
+ font-style: normal;
+ font-variant: normal;
+ font-weight: 400;
+ letter-spacing: 0;
+ line-height: 22px;
+ opacity: 1.00;
+ padding-bottom: 16px;
+ padding-top: 0px;
+ text-align: left;
+ text-decoration: none;
+ text-indent: 0px;
+ text-transform: none;
+}
+h1 {
+ font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+ font-weight:normal;
+ }
+h2 {
+ font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+ font-weight:normal;
+ }
+ 
+ .researcHighlight {
+ font-family: 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+ font-weight:normal;
+  color: FORESTGREEN;
+font-size:1.3em
+ }
+ 
+ .textBody{
+margin-bottom: 0px;
+margin-left: auto;
+margin-right: 20%; 
+margin-top: 0px;
+position: center; 
+word-wrap: break-word; 
+text-align: left; 
+width: 60%;
+ }
+ 
+ .myPic {
+width:280px;
+ height:335px;
+margin-left:11%;
+float:left;
+margin-right:20px;
+margin-bottom:20px;
+position: center;
+box-shadow: 6px 11px 10px 4px rgba(156, 156, 156, 0.75);
+-moz-box-shadow: 6px 11px 10px 4px rgba(156, 156, 156, 0.75);
+-webkit-box-shadow: 6px 11px 10px 4px rgba(156, 156, 156, 0.75);
+}
+
+.myPicImage {
+	width:280px
+	}
+li.thesis {
+list-style-type:none;
+}
+li.thesis:before {
+    content: '❖';
+        margin: -1.1em;    /* any design */
+    }
+
+@media screen and (max-width: 1024px){
+    .textBody {
+        margin-right:auto;
+        margin-left:auto;
+        width:90%;
+        }
+        p {
+        font-size:20px;
+         line-height: 25px;
+        }
+        li {
+         line-height: 25px;
+        font-size:20px;
+        }
+    .myPic {
+        margin-left:40px;
+        width:300px;
+        height:200px;
+        background-size:300px;
+        }
+    .myPicImage {
+    	width:300px
+    	}
+}
+
+div#navbar li {
+	list-style-type: none;
+	display: inline;
+	font-size:1.1em;
+	text-transform: uppercase;
+	 font-family: 'Lato', 'Futura-Medium', 'Futura', 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+div#navbar li a {
+	text-decoration: none;
+	color: LightSlateGray;
+	padding: 4px 20px 4px 20px;
+}
+
+
+div#navbar li.current-page a
+{
+	color: black;
+	text-decoration: none;
+	font-weight: 900;
+}
+
+
+</style>
+ </head>
+ <body onload="checkParam()">
+
+
+ <div style="text-align: center; ">
+ <h1>Aharon Bar Hillel</h1>
+ </div>
+ 
+<div id="navbar" class="navbar" style="text-align:center;">
+                  <ul id="navbar-list" class="navbar-list">
+                  <li id="aboutSectionNav" class="current-page"><a href="javascript:Show(&#39;aboutSection&#39;)">About</a></li>
+                  <li id="papersSectionNav" class="noncurrent-page"><a href="javascript:Show(&#39;papersSection&#39;)">Publications</a></li>
+                  <li id="contactSectionNav" class="noncurrent-page"><a href="javascript:Show(&#39;contactSection&#39;)">Contact</a></li>
+                  <li id="miscSectionNav" class="noncurrent-page"><a href="javascript:Show(&#39;miscSection&#39;)">More</a></li>
+                  </ul>
+
+</div>
+
+ 
+
+
+ <div id="aboutSection">
+ <div class="myPic">
+ <img class="myPicImage" src="./Aharon BarHillel_files/me.jpg" alt="My picture" >
+ </div>
+ 
+ <div class="textBody">
+
+ <p style="padding-bottom: 0pt; padding-top: 0pt;">
+Member of the <a href="http://in.bgu.ac.il/engn/iem/Pages/default.aspx"> Department of Industrial Engineering and Management</a> at the <a href="http://in.bgu.ac.il/Pages/default.aspx">Ben-Gurion University of the Negev</a>.</p>
+<hr>
+ <p style="padding-bottom: 0pt; padding-top: 0pt; "> I have a Math and Philosophy first degree from <a href="https://english.tau.ac.il/"> Tel Aviv University </a>, and a PhD in Neural computation from  <a href="http://www.huji.ac.il/"> the Hebrew University </a> under the supervsion of <a href="https://www.cse.huji.ac.il/~daphna/"> Prof. Daphna Weinshall </a>. MY Thesis focused on distance function learning and generative models for computer vision problems. Since than I worked in the Research departments of Intel, General Motors, and Microsoft, developing machine learning methods for computing grid optimization (Intel Research), computer vision and sensor fusion for automotive (GM Research), and ML+Vision for natural user interface (Microsoft Research). I become a Senior Lecturer in BGU on 2016. </p>
+  <div style="clear:both"></div>
+
+  <hr>
+ <div class="researcHighlight">
+ My research interests are in machine learning, computer vision, and their applications. In machine learing, I was always interested in representation, with focus on distance learning and feature selection in the past. My current research focuses on deep learning aspects including inference acceleration, network interpretation, and modular networks construction. In Computer Vision, I have interest in the problems of object detection, pose estimation, and tracking. Regarding ML and CV applications, my current activities are diverse and include: agricultural phenotyping, ultra sound and CT for non destructive testing, TCR-pMHC protein binding prediction, analysis of gaze distributions, and vision for robotics.
+</div>
+<hr>
+
+
+<p style="padding-bottom: 0pt; padding-top: 0pt; ">My <a href="./Aharon BarHillel_files/AharonBarHillel_CV 11-2019_BGU.pdf">CV</a>.</p>
+</div>
+</div>
+
+
+<div id="papersSection" style="display:none">
+<div class="textBody">
+ 
+<!-- <h2 name="papers">Papers & Presentations</h2> -->
+<ul>
+
+
+
+<p>2020</p>
+
+<!-- <li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/TVCG_Submission.pdf"><font color="#89a9aa">Inference Graphs Based on Hidden Layers Activity Interpretation</font></a></font> -->
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1gEUEtoq359Gifrdn-7IUvcC5JtUldBUu/view?usp=sharing"><font color="#89a9aa">Inference Graphs Based on Hidden Layers Activity Interpretation</font></a></font>
+<br><font face="times new roman, serif">Yael Konforti, Alon Shpigler, Boaz Lerner, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Submitted to PAMI. </ </font></li>
+
+
+<!-- <li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Deep_Tables.pdf"><font color="#89a9aa">Deep Convolutional Tables: Deep Learning without Neurons</font></a></font> -->
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1SVFH3-nk70HVAfI8gEzUjpewZb-p1MxJ/view?usp=sharing"><font color="#89a9aa">Deep Convolutional Tables: Deep Learning without Neurons</font></a></font>
+<br><font face="times new roman, serif">Shay Dekel, Yosi Keller, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Submitted to PAMI. </ </font></li>
+
+<!-- <li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1n2tM5BXWiURpL0TwTEAmgoeYTDKy7P_n/view?usp=sharing"><font color="#89a9aa">LDA-segmentation based tracking</font></a></font> -->
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/LDA_segmentation_based_tracking.pdf"><font color="#89a9aa">LDA-segmentation based tracking</font></a></font>
+<br><font face="times new roman, serif">Felix Vilensky, Stanley Rotman, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Submitted to TIPS. </ </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/ECCV_2020_InferenceGraph.pdf"><font color="#89a9aa">Inference Graphs for CNN Interpretation</font></a></font>
+<br><font face="times new roman, serif">Yael Konforti, Alon Shpigler, Boaz Lerner, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">ECCV 2020. <a href="./Aharon BarHillel_files/supp_mat_eccv_2020.pdf"><font color="#89a9aa">Supplementary material</font></ </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/CEA2020_Length_Phenotyping.pdf"><font color="#89a9aa">Length Phenotyping with Interest Point Detection</font></a></font>
+<br><font face="times new roman, serif">Adat Vit, Guy Shani, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Computers and electronics in agriculture 2020. </font></li>
+
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/CVPPP2020_Detection_agriculture.pdf"><font color="#89a9aa">Detection in agricultural contexts:Are we close to human level? </font></a></font>
+<br><font face="times new roman, serif">Omer Wosner, Guy Fargon, Faina Khoroshevsky, Lena Karol, Oshry Markovitch, Daniel A. Koster, Aharon Bar-Hillel </font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">CVPPP workshop ECCV 2020. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/CVPPP2020_PartsPerObjectCount.pdf"><font color="#89a9aa">Phenotyping problems of parts-per-object count </font></a></font>
+<br><font face="times new roman, serif">Faina Khoroshevsky, Stanislav Khoroshevsky, Orit Granitz, Oshry Markovitch, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">ECCV CVPPP workshop 2020 </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/UltraSonics2020.pdf"><font color="#89a9aa">A unified deep network for beamforming and speckle reduction in plane
+wave imaging: A simulation study</font></a></font>
+<br><font face="times new roman, serif">Etai Mor, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">UltraSonics 2020. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/cogsci2020.pdf"><font color="#89a9aa">Modeling the Effect of Driver’s Eye Gaze Pattern Under Workload: Gaussian
+Mixture Approach</font></a></font>
+<br><font face="times new roman, serif">Ron M. Hecht, Omer Tsimhoni, Aharon Bar-Hillel, Naftali Tishby</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Cognitive Science (CogSci) 2020. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/CV4A_2020.pdf"><font color="#89a9aa">Transfer Learning of Photometric Phenotypes in Agriculture Using Metadata</font></a></font>
+<br><font face="times new roman, serif">Dan Halbersberg, Aharon Bar-Hillel, Shon Mendelson, Daniel Koster, Lena Karol, Boaz Lerner</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">ICLR CV4A workshop 2020. </font></li>
+
+
+<p>2019</p>
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Litvak2019_ICRA.pdf"><font color="#89a9aa">Learning Pose Estimation for High-Precision Robotic Assembly Using Simulated Depth Images</font></a></font>
+<br><font face="times new roman, serif">Yuval Litvak, Armin Biess, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">ICRA 2019. <a href="https://www.youtube.com/watch?v=uMvq2-Tg-9g"><font color="#89a9aa">YouTube Video</font></a></font></li>
+
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/ICC_THMS_FINAL_20190705_124400.pdf"><font color="#89a9aa">Real-time Information constrained control analysis of eye gazing distribution under cognitive load</font></a></font>
+<br><font face="times new roman, serif">Ron M. Hecht, Aharon Bar-Hillel, Ariel Telpaz, Omer Tsimhoni, and Naftali Tishby</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">IEEE Transactions On Human-Machine Systems, 2019. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Farjon2019_Article_DetectionAndCountingOfFlowersO.pdf"><font color="#89a9aa">Detection and Counting of Flowers on Apple Trees for Better Chemical Thinning Decisions</font></a></font>
+<br><font face="times new roman, serif">Guy Farjon, Omri Krikeb, Aharon Bar-Hillel, Victor Alchanatis</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">Precision Agriculture, 2019. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Hecht2019_ICASSP_ICC.pdf"><font color="#89a9aa">Information constrained control for visual detection of important areas</font></a></font>
+<br><font face="times new roman, serif">Ron M Hecht, Ariel Telpaz, Gila Kamhi, Aharon Bar-Hillel, Naftali Tishby</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">ICASSP 2019. </font></li>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Vit2019_CVPR_CVPPP.pdf"><font color="#89a9aa">Length phenotyping with interest point detection</font></a></font>
+<br><font face="times new roman, serif">Adar Vit, Guy Shani, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">CVPR CVPPP workshop 2019. </font></li>
+
+
+<p>2018</p>
+
+<li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/LeafCounting_2018.pdf"><font color="#89a9aa">Leaf counting: Multiple scale regression and detection using deep CNNs</font></a></font>
+<br><font face="times new roman, serif">Yotam Itzhaky, Guy Farjon, Faina Khoroshevsky, Alon Shpigler, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">BMVC CVPPP Workshop, 2018. </font></li>
+
+<!-- <li><font face="Times New Roman, Times, serif"><a href="./Aharon BarHillel_files/Athalia2018_MapPruning.pdf"><font color="#89a9aa">Input-Dependent Feature-Map Pruning</font></a></font> -->
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/116UQKPTitbCtkJxsiH_Y0UyBCjBVqvaJ/view?usp=sharing"><font color="#89a9aa">Input-Dependent Feature-Map Pruning</font></a></font>
+<br><font face="times new roman, serif">Atalya Waissman, Aharon Bar-Hillel</font><font face="Times New Roman, Times, serif"></font>
+<br><font face="Times New Roman, Times, serif">the 27th International Conference on Artificial Neural Networks (ICANN), 2018. </font></li>
+
+
+<p>2017</p>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1HgpvvQryJZp6Uf3H5ltgEhziTkDRVF8m/view?usp=sharing"><font color="#89a9aa">Toward Realistic Hands Gesture Interface: Keeping it Simple for Developers and Machines</font></a></font><font face="Times New Roman, Times, serif"><br></font><font face="times new roman, serif">Eyal Krupka, Kfir Karmon, Noam Bloom, Daniel Freedman, Ilya Gurvich, Aviv Hurvitz, Ido Leichte, Yoni Smolin, Yuval Tzairi,&nbsp;Alon Vinnikov, Aharon Bar Hillel</font><font face="Times New Roman, Times, serif"></font><font face="Times New Roman, Times, serif"><br>CHI (Computer Human Interaction) 2017. </font></li>
+<p>2016</p>
+<font face="Times New Roman, Times, serif"><li><font face="Times New Roman, Times, serif"><a href="https://arxiv.org/abs/1602.04489">Convolutional tables ensemble: Classification in microseconds</a></font><font face="Times New Roman, Times, serif"><br>Aharon Bar Hillel, Eyal Krupka, Noam Bloom&nbsp;</font><font face="Times New Roman, Times, serif"><br>https://arxiv.org/abs/1602.04489<br></font></li></font><font face="Times New Roman, Times, serif">
+<p>2015</p>
+<font face="Times New Roman, Times, serif"><li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1RgMF5uxsJetT5So4XisqKy380vZvTpuW/view?usp=sharing"><font color="#0066cc">Real-time tracking with detection for copying with viewpoint</font></a> (See the web page <a href="http://www.eng.tau.ac.il/~oron/" rel="nofollow"><font color="#0066cc">http://www.eng.tau.ac.il/~oron/</font></a>&nbsp;for tracking examples)</font><font face="Times New Roman, Times, serif"><br>Sahul Oron, Aharon Bar Hillel, Shai Avidan&nbsp;</font><font face="Times New Roman, Times, serif"><br>MVAP 2015<br></font></li></font><font face="Times New Roman, Times, serif">
+<li><font color="#0066cc" face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/11y5kzGlbyANcvCCMeMGRjLAAABsyRLiE/view?usp=sharing">Cognitive workload and vocabulary sparseness: theory and practice</a></font><font face="Times New Roman, Times, serif"><br></font><font face="Times New Roman, Times, serif">Ron M. Hecht, Aharon Bar-Hillel, Stas Tiomkin, Hadar Levi, Omer Thimhoni, Naftali Tishby&nbsp;</font><font face="Times New Roman, Times, serif"><br>InterSpeech 2015</font></li></font>
+<p>2014</p>
+<font face="Times New Roman, Times, serif"><li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1f5DzG2bSvmul30D-7dk4YVjEHN3gum0r/view?usp=sharing"><font color="#0066cc">Extended Luaks Kanade Tracking</font></a> (See the web page <a href="http://www.eng.tau.ac.il/~oron/" rel="nofollow"><font color="#0066cc">http://www.eng.tau.ac.il/~oron/</font></a>&nbsp;for tracking examples)</font><font face="Times New Roman, Times, serif"><br>Sahul Oron, Aharon Bar Hillel, Shai Avidan&nbsp;</font><font face="Times New Roman, Times, serif"><br>ECCV 2014<br></font></li></font><font face="Times New Roman, Times, serif">
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1C1GvgkM4oFP-rvkUZz0FD5uyzPNkjVU0/view?usp=sharing"><font color="#0066cc">Discriminative Ferns ensemble for hand pose recognition</font></a> (The&nbsp;<a href="http://research.microsoft.com/en-us/projects/threehandpose/" rel="nofollow"><font color="#0066cc">Data</font></a>&nbsp;used in the paper)</font><font face="Times New Roman, Times, serif"><br>Eyal Krupka, Alon Vinnikov, Ben Klein, Aharon Bar Hillel,&nbsp;Daniel Freedman, Simon Stachniak&nbsp;</font><font face="Times New Roman, Times, serif"><br>CVPR 2014<br></font></li>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1iQOl20Bb4M_XU57zA8CyafWFyTgizZOp/view?usp=sharing"><font color="#0066cc">Locally orderless tracking</font></a> </font><font face="Times New Roman, Times, serif"><br>Shaul Oron, Aharon Bar Hillel, Dan Levi, Shai Avidan</font><font face="Times New Roman, Times, serif"><br>IJCV, 2014</font></li>
+<li><a href="https://drive.google.com/file/d/1Ojt4FCLGeTJuhvnsONv9eCDxyIM6dSMn/view?usp=sharing"><font color="#0066cc">Learning fast hand pose recognition</font></a> <font face="Times New Roman, Times, serif"><br>Eyal Krupka, Alon Vinnikov, Ben Klein, Aharon Bar Hillel,&nbsp;Daniel Freedman, Simon Stachniak</font><font face="Times New Roman, Times, serif"><br>A book chapter in "Computer Vision and Machine Learning with RGBD sensors", Springer, 2014</font></li></font><font face="Times New Roman, Times, serif">
+<p>2013</p>
+<font face="Times New Roman, Times, serif"><li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1-NT6zPwz-9NHmht4GplmOk1isjx-ppGt/view?usp=sharing">Fast multiple-part based object detection using KD-Ferns</a> </font><font face="Times New Roman, Times, serif"><br>Dan Levi, Shai Silberstein, Aharon Bar-Hillel&nbsp;</font><font face="Times New Roman, Times, serif"><br>CVPR 2013<br></font></li></font><font face="Times New Roman, Times, serif">
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1mBSeA_Dg4dTrv-kBVTYYLGB7I7VQ_h0-/view?usp=sharing">Naive Bayes Nearest Neighbor classification of ground moving targets</a> </font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Igal Bilik and Ron Hecht&nbsp;</font><font face="Times New Roman, Times, serif"><br>IEEE Radar conference, 2013<br></font></li>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1vJy-3ACUfOCvBmiw7BfMuL-3sw66YsAq/view?usp=sharing">Effective model representation by information bottleneck principle</a> </font><font face="Times New Roman, Times, serif"><br>Ron Hecht, Elad Noor, Gil Dobry, Yaniv Zigel,&nbsp;Aharon Bar Hillel, Naftali Tishby</font><font face="Times New Roman, Times, serif"><br>IEEE transaction on Audio, Speech and Language processing, 2013&nbsp;<br></font></li></font></font><font face="Times New Roman, Times, serif">
+<p>2012</p>
+<font face="Times New Roman, Times, serif"><li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1Sv9Nfyu306q4Z_xnvxbw3TlzeXWCnHPO/view?usp=sharing">Recent progress in road and lane detection - a survey</a> </font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Ronen Lerner, Dan Levi, Guy Raz&nbsp;</font><font face="Times New Roman, Times, serif"><br>Machine Vision and Applications 2012<br></font></li>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1ji8kfk-_FrP0NKe4sfgSfETUPfARJHHN/view?usp=sharing">Locally orderless tracking</a> </font><font face="Times New Roman, Times, serif"><br>Shaul Oron, Aharon Bar-Hillel, Dan Levi, Shai Avidan&nbsp;</font><font face="Times New Roman, Times, serif"><br>CVPR 2012 <br></font></li>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1U5BJxZxvqTZYFUG-hM-uqItbVb9oM1Fg/view?usp=sharing">Real time pedestrian detection with deformable part models</a> </font><font face="Times New Roman, Times, serif"><br>Hyunggi Cho, Paul E. Rybski, Aharon Bar-Hillel, Wende Zhang&nbsp;</font><font face="Times New Roman, Times, serif"><br>IEEE&nbsp; Intelligent Vehicles Symposium (IV) 2012 </font><br></li>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/11GVs1UdB7RgxUdCDZFuJ7B7Py_tAJVVM/view?usp=sharing">Off Vehicle Evaluation of camera based pedestrian detection</a> </font><font face="Times New Roman, Times, serif"><br>Yaniv Alon, Aharon Bar-Hillel<font face="Times New Roman, Times, serif"><br>IEEE&nbsp; Intelligent Vehicles Symposium (IV) 2012 </font></font></li><font face="Times New Roman, Times, serif"></font></font></font></font>
+<p>2011</p>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1W6NFW-AxBnrzXvFbUdo65lw06a2786IL/view?usp=sharing">Fusing visual and range imaging for object class recognition</a>&nbsp; (The&nbsp;<a href="ftp://ftp.cs.huji.ac.il/users/dmitrh01/Depth_camera_data/ICCV2011_Data.zip">Data</a>&nbsp;used in the paper)</font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Dmitry Hanukaev, Dan Levi </font><font face="Times New Roman, Times, serif"><br>ICCV 2011</font></li>
+<p>2010</p>
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1x_EeVDqSL4UAeTV9M3nVUR1SPCZA3fOm/view?usp=sharing">Part-based feature synthesis&nbsp;for human detection</a>&nbsp;(PFS code is available below)</font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Dan Levi, Eyal Krupka, Chen Goldberg&nbsp;</font><font face="Times New Roman, Times, serif"><br>ECCV 2010&nbsp;</font></li>
+<p>&nbsp;2009</p>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1RWPfyydhRZBguLnXrfH6UqGDulMj-WFf/view?usp=sharing">Efficient human computation: the distributed labeling problem </a></u></font><font face="Times New Roman, Times, serif"><br>Ran Gilad-Bachrach, Aharon Bar-Hillel, Liat Ein-Dor&nbsp;<br>Workshop on human computation, KDD 2009&nbsp;</font></li>
+<p>2008</p>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1jzczF1ATIGWBFAQf2RwbQqNYtLyH0XVz/view?usp=sharing">Efficient learning of relational object class models</a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Daphna Weinshall <br>International Journal of Computer Vision (IJCV), 2008 <br></font></li><font face="Times New Roman, Times, serif">
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1i_UUjFzz1dksM8Xg6ZWPx-R44Dw_eEq6/view?usp=sharing">Gaussian mixture models with equivalent constraints</a></font><br>Noam Shental, Aharon Bar-Hillel, Tomer Hertz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, Daphna Weinshall <br>A book chpater in "Constrained Clustering: Advances in Algorithms, Theory and Applications" by Sugatu Basu, Ian Davidson and Kiri Wagstaff (Eds.), 2008<br></li></font><font face="Times New Roman, Times, serif">
+<li><font face="Times New Roman, Times, serif"><a href="https://drive.google.com/file/d/1IwvLeomoVVRVyRnt3szio14GABuDyt-3/view?usp=sharing">Comparison Processes in Category learning:&nbsp;From Theory to Behavior</a></font><br>Rubi Hammer,&nbsp;Aharon Bar-Hillel, Tomer Hertz&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, Daphna Weinshall and Shaul Hochstein&nbsp;<br>Brain Research, Special issue on 'Brain and Vision', 2008</li></font>
+<p>2007</p>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1tX6oYQE45qYKbthy_KmG0b6leb-DcnRM/view?usp=sharing">Reinforcement learning for capacity tuning of multi core servers </a></u></font><font face="Times New Roman, Times, serif"><br>Liat Ein-Dor, Yossi Ittach, Aharon Bar-Hillel, Amir Di-Nur, Ran Gilad-Bachrach <br>In <i>"machine learning for systems problems"</i>, workshop in NIPS 2007 <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/12ut4-cA4Ydc1e95BujOSKQqYO7EuGzlw/view?usp=sharing">Learning distance functions by coding similarity </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Daphna Weinshall <br>In the 24rd International Conference on Machine Learning (ICML), 2007. <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1yYh10RFw3nWP730SoHapdJNABJgqO-VS/view?usp=sharing">Workstation capacity tuning using reinforcement learning </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Amir Di-Nur, Liat Ein-Dor, Ran Gilad-Bachrach, Yossi Ittach <br>In International conference for high performance computing, networking, storage and analysis (SC), 2007</font><font face="Times New Roman, Times, serif">&nbsp;</font></li>
+<p>2006</p>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1NsDN1s_K43zssG6szpaakeO-oIiDBuMp/view?usp=sharing">Subordinate class recognition using relational object models </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel, Daphna Weinshall <br>In 20th International Conference on Neural Information Processing Systems (NIPS), 2006. <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1DYWqHNqxSQtLw3ItfsbBBgDWZyNM4xKe/view?usp=sharing">Learning from weak represnentation using distance function and generative models </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar-Hillel <br>Ph.D Thesis, 2007 <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1c-0jwq6tybJB8GTwaaXN42HTzy7tHeaX/view?usp=sharing">Learning a kernel function for classification with small training samples </a></u></font><font face="Times New Roman, Times, serif"><br>Tomer Hertz, Aharon Bar Hillel, Daphna Weinshall <br>In the 23rd International Conference on Machine Learning (ICML), 2006 <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1c_-IyeS_Z14sANfVlk17QjcEortSFrvF/view?usp=sharing">Spike sorting: Bayesian clustering of non stationary data </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar Hillel, Adam Spiro, Eran Stark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>Journal of Neuroscience Methods 157(2), 303-316, October 2006 </font>
+<p>2005</p></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1gp0rx9zgUNtAd7qJAQGJ8O1YgbIFHxNp/view?usp=sharing">Efficient learning of relational object class models </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar Hillel, Tomer Hertz&nbsp;and Daphna Weinshall<br>International Conference on Computer Vision (ICCV), 2005. <br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/10xFymgzjtcdIkG5lZh3cAf0xsEoltQ3r/view?usp=sharing">Learning a Mahalanobis metric from equivalence constraints </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar Hillel, Tomer Hertz, Noam Shental and Daphna Weinshall <br>In <i>Journal of Machine Learning Research 6(Jun): 937-965, 2005 <br></i></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/12ulPuZA1eU4NMbxUlc2MPOeBIPc42CVM/view?usp=sharing">Object class recognition by boosting a part based model </a></u></font><font face="Times New Roman, Times, serif"><br>Aharon Bar Hillel, Tomer Hertz&nbsp;and Daphna Weinshall <br>In <i>In IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2005 </i></font><font face="Times New Roman, Times, serif"><i>
+<p>2004</p></i></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1APPlBOSlSFKK_ZT-2RJIBIXJOcQwPSNn/view?usp=sharing">Spike sorting: Bayesian Clustering of non-stationary data</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Aharon Bar-Hillel, Adam Spiro and Eran Stark&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;In <i>18th International Conference on Neural Information Processing Systems - NIPS, Vancouver, Canada, 2004.<br></i></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1eKNMLCPFnyNQW2nHxGfpMsQiOGCRptC3/view?usp=sharing">Boosting Margin Based Distance Functions for Clustering</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Tomer Hertz, Aharon Bar-Hillel and Daphna Weinshall <br>&nbsp;In <i>21st International Conference on Machine Learning (ICML 2004), Banff, Alberta, Canada July 2004.&nbsp;<br></i></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1Mi4bGRM2cLIDtcb81LPwvEtmMyb-B50K/view?usp=sharing">Learning Distance Functions for Image Retrieval</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Tomer Hertz, Aharon Bar-Hillel and Daphna Weinshall <br>&nbsp;In <i>IEEE Conf. on Computer Vision &amp; Pattern Recognition, Washington, DC, June 2004&nbsp;</i><br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1zxeAHlXJRXghtqtSXAEdrDF4mlwNO5SA/view?usp=sharing">Computing Gaussian Mixture Models with EM using Equivalence Constraints</a></u></font><font face="Times New Roman, Times, serif"><br>Noam Shental, Aharon Bar-Hillel, Tomer Hertz&nbsp;and Daphna Weinshall <br>In <i>17th International Conference on Neural Information Processing Systems - NIPS, Vancouver, Canada, December 2004. <br></i></font><font face="Times New Roman, Times, serif"><i>
+<p>2003</p></i></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1dLzHZ-J0n4t6h-dxSHNesfPrfPFK5Pc7/view?usp=sharing">Learning with Equivalence Constraints, and the relation to Multiclass Classification</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Aharon Bar-hillel , Daphna Weinshall <br>&nbsp;In <i>The Sixteenth Annual Conference on Learning Theory (COLT) , </i>2003<br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1YD7ZHXQz4KCh5aNpA-zdQFc4fkuAdbjP/view?usp=sharing">Learning distance functions using Equivalence Relations</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Aharon Bar-hillel , Tomer Hertz, Noam Shental, Daphna Weinshall <br>&nbsp;In <i>The Twentieth International Conference on Machine Learning (ICML) </i>2003<br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/18nVAmt9oD8orjLiYzbjsGFc7oCfuyiky/view?usp=sharing">Computing mixture models with EM using side information (Equivalence Constraints)</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Noam Shental, Aharon Bar-hillel , Tomer Hertz, Daphna Weinshall <br>&nbsp;In <i>"The Continuum from Labeled to Unlabeled Data in Machine Learning and Data Mining", Workshop in</i> ICML 2003<br></font></li>
+<li><font face="Times New Roman, Times, serif"><u><a href="https://drive.google.com/file/d/1w4B5tT7tfX6XVf_tOR-AGnQz3_0Iipk8/view?usp=sharing">Enhancing image and video retrieval : Learning via Equivalence Constraints</a></u></font><font face="Times New Roman, Times, serif"><br>&nbsp; Tomer Hertz, Noam Shental, Aharon Bar-hillel ,Daphna Weinshall <br>&nbsp;In <i>proceedings of IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i> 2003<br></font>
+
+</ul>
+</div>
+</div>
+
+
+<div id="contactSection" style="display:none">
+<div class="textBody">
+ <!-- <h2><a name="contact"></a>Contact information</h2> -->
+ <p style="padding-bottom: 0pt; padding-top: 0pt; "><i>Email:</i> <a href="mailto:barhille@bgu.ac.il">barhille@bgu.ac.il</a></p>
+  <p style="padding-bottom: 0pt; padding-top: 0pt; "><i>Office:</i> Room 240, Building 16, Ben-Gurion University. [<a href="http://in.bgu.ac.il/Pages/maps.aspx">map</a>]</p>
+ <p style="padding-bottom: 0pt; padding-top: 0pt; "><i>Address:</i>
+ </p><blockquote>Aharon Bar Hillel<br>Department of Industrial Engineering and Management,<br> 
+Ben-Gurion University of the Negev<br>P.O. 653, Beersheba 8410501<br>Israel</blockquote>
+<p></p>
+</div>
+</div>
+
+
+<div id="miscSection" style="display:none">
+
+<div class="textBody">
+ 
+<!--  <h2>Other Things</h2> -->
+<p><span style="font-size:large">I like:</span></p>
+<table>
+<tbody>
+<tr>
+<td align="left"><img alt="[Terry Pratchet]" src="./Aharon BarHillel_files/prat.jpg" style="width:150px;height:175px" ></td>
+<td align="middle"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/shaban.jpg"><img alt="שלומי שבן" border="0" height="144" src="./Aharon BarHillel_files/shaban.jpg" style="width:220px;height:175px" width="192"></a></div></td>
+<td align="right"><img alt="[Civilization]" src="./Aharon BarHillel_files/Civilization6.jpg"></td>
+<td align="right"><img alt="[Civilization]" src="./Aharon BarHillel_files/Taleb2.jpg"></td></tr>
+<tr>
+<td align="left"><p style="text-align:center">Terry Pratchet </p></td>
+<td align="middle"><p style="text-align:center">Shlomi Shaban </p></td>
+<td align="left"><p style="text-align:center">Civilization</p></td>
+<td align="left"><p style="text-align:center">Nassim Taleb</p></td>
+</tr></tbody></table>
+<p><span style="font-size:large"><br></span></p>
+<p><span style="font-size:large">My Love: </span></p>
+<table>
+<tbody>
+<tr>
+<td align="center">
+<div style="text-align:left;display:block"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/Hagar1.jpg"><img alt="הגר " border="0" height="660" src="./Aharon BarHillel_files/Hagar1.jpg" style="width:405px;height:540px" width="514"></a></div></div></td>
+<td align="Right"><div style="text-align:left;display:block"><div style="text-align:left;display:block"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/Kids2.jpg"><img alt="צ&amp;#39;נעמי, אביגיל ועתליה" border="0" height="1095" src="./Aharon BarHillel_files/Kids2.jpg" style="width:405px;height:540px" width="883"></a></div></div></div></td>
+</tr>
+<tr>
+<td align="center"><p style="text-align:center">הגר </p></td>
+<td style="width:60px"><p style="text-align:center">נעמי, אביגיל ועתליה</p></td>
+</tr></tbody></table>
+
+<!--<table>
+<tbody>
+<tr>
+<td align="left"><div style="text-align:left;display:block"><div style="text-align:left;display:block"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/Naomi1.jpg"><img alt="צ&amp;#39;צבאב שופו" border="0" height="1095" src="./Aharon BarHillel_files/Naomi1.jpg" style="width:136px;height:180px" width="883"></a></div></div></div></td>
+<td style="width:60px">&nbsp;<div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/Abigail4.jpg"><img alt="גיג שימשום צוקי" border="0" height="582" src="./Aharon BarHillel_files/Abigail4.jpg" style="width:135px;height:161px" width="469"></a></div></td><td align="middle"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/IMG_20140613_113713.jpg"><img alt="תול פיצפוץ" border="0" height="883" src="./Aharon BarHillel_files/IMG_20140613_113713.jpg" style="width:132px;height:180px" width="664"></a></div></td>
+<td align="right">
+<div style="text-align:left;display:block"><div style="text-align:left;display:block"><a href="./Aharon BarHillel_files/Hagar1.jpg"><img alt="הגר " border="0" height="660" src="./Aharon BarHillel_files/Hagar1.jpg" style="width:135px;height:179px" width="514"></a></div></div>
+<div style="text-align:left"><br></div></td></tr>
+<tr>
+<td align="left"><p style="text-align:center">צ'באב שופו&nbsp;&nbsp; </p></td>
+<td style="width:60px"><p style="text-align:center">גיג שימשום צוקי</p></td><td align="middle"><p>תול פיצפוץ</p></td>
+<td align="left"><p style="text-align:center">הגר</p></td></tr></tbody></table>   -->
+
+
+ 
+
+
+
+</body></html>
